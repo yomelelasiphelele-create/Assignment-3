@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://puredrop.org/sitemap.xml
+
+# Do not index internal/utility files
+Disallow: /js/
+Disallow: /css/

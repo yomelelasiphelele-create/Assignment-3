@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate | PureDrop Foundation – Give Clean Water Today</title>
+  <meta name="description" content="Donate to PureDrop Foundation and help provide safe drinking water to communities in need across South Africa. Every donation creates a lasting impact.">
+  <meta name="keywords" content="donate clean water, water charity donation, PureDrop Foundation donate, South Africa water donation">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://puredrop.org/Donate.html">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <a href="Home.html" class="logo">PureDrop</a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Impact.html">Impact</a></li>
+      <li><a href="Project.html">Projects</a></li>
+      <li><a href="Donate.html" aria-current="page">Donate</a></li>
+      <li><a href="enquiry.html">Enquire</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero-short" aria-label="Donate page hero">
+    <div class="hero-content">
+      <h1>Be Part of the Solution</h1>
+      <p>Your support helps us provide safe drinking water to communities in need. Every donation creates lasting impact.</p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- DONATION TIERS -->
+    <section aria-label="Donation amounts" style="padding:80px 8% 40px;">
+      <div class="section-title">
+        <h2>Choose Your Impact</h2>
+        <p>Click a tier below to auto-fill the donation amount, then complete the form.</p>
+      </div>
+
+      <div class="donate-cards">
+        <div class="donate-card">
+          <p>💧 Water for one person</p>
+          <div class="amount">R100</div>
+          <p>1 month of clean drinking water for a child.</p>
+          <br>
+          <button class="btn donate-btn" data-amount="100">Donate R100</button>
+        </div>
+        <div class="donate-card">
+          <p>🏠 Family supply</p>
+          <div class="amount">R500</div>
+          <p>Clean water for a family of 5 for a full month.</p>
+          <br>
+          <button class="btn donate-btn" data-amount="500">Donate R500</button>
+        </div>
+        <div class="donate-card">
+          <p>🏫 School installation</p>
+          <div class="amount">R2 500</div>
+          <p>Contributes towards a school water filtration unit.</p>
+          <br>
+          <button class="btn donate-btn" data-amount="2500">Donate R2 500</button>
+        </div>
+        <div class="donate-card">
+          <p>💪 Custom amount</p>
+          <div class="amount">Any</div>
+          <p>Choose your own amount to support any project.</p>
+          <br>
+          <button class="btn donate-btn" data-amount="">Donate Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATION FORM (inline) -->
+    <section class="form-page" style="padding-top:20px;padding-bottom:80px;" aria-label="Donation form">
+      <div class="form-card">
+        <h1>Donation Details</h1>
+        <p>Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
+
+        <form id="donation-form" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dn-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="dn-name" name="name" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="dn-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="dn-email" name="email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dn-amount">Donation Amount (ZAR) <span class="req">*</span></label>
+            <input type="number" id="dn-amount" name="amount" placeholder="e.g. 500" min="10" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dn-method">Payment Method <span class="req">*</span></label>
+            <select id="dn-method" name="payment_method" required>
+              <option value="">Select payment method</option>
+              <option value="Credit Card">Credit Card</option>
+              <option value="Debit Card">Debit Card</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+              <option value="PayPal">PayPal</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dn-message">Message <small>(optional)</small></label>
+            <textarea id="dn-message" name="message" rows="4" placeholder="Write a message of support…"></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Send Donation</button>
+
+        </form>
+
+        <div id="donation-feedback" style="display:none;margin-top:20px;" aria-live="polite"></div>
+
+      </div>
+    </section>
+
+    <!-- CORPORATE CTA -->
+    <section aria-label="Corporate sponsorship call to action" style="background:#f0f9ff;padding:80px 8%;text-align:center;">
+      <h2 style="color:#0369a1;font-size:36px;margin-bottom:16px;">Corporate Sponsorship</h2>
+      <p style="max-width:600px;margin:0 auto 30px;color:#475569;font-size:17px;">
+        Partner with PureDrop Foundation and align your brand with a meaningful cause.
+        Sponsorships start from R50 000 per year.
+      </p>
+      <a href="enquiry.html" class="btn">Enquire About Sponsorship</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:yomelelasiphelele@gmail.com">yomelelasiphelele@gmail.com</a></p>
+        <p>Phone: <a href="tel:+27679473236">+27 67 947 3236</a></p>
+        <address>1 Modiko Street, Gqeberha, Eastern Cape,<br>South Africa</address>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="ContactUs.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a><br>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><br>
+        <a href="https://x.com" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+    <p>© 2026 PureDrop Foundation | Safe Drinking Water For All</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/donate.js"></script>
+</body>
+</html>

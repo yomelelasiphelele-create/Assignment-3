@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enquire | PureDrop Foundation – Services, Volunteering &amp; Sponsorship</title>
+  <meta name="description" content="Enquire about PureDrop Foundation's water services, volunteer opportunities, corporate sponsorships, or borehole and water tank installations for your community.">
+  <meta name="keywords" content="enquiry clean water service, volunteer PureDrop, sponsor water project, borehole enquiry South Africa">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://puredrop.org/enquiry.html">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <a href="Home.html" class="logo">PureDrop</a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Impact.html">Impact</a></li>
+      <li><a href="Project.html">Projects</a></li>
+      <li><a href="Donate.html">Donate</a></li>
+      <li><a href="enquiry.html" aria-current="page">Enquire</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero-short" aria-label="Enquiry page hero">
+    <div class="hero-content">
+      <h1>Make an Enquiry</h1>
+      <p>Interested in a water project, volunteering, or becoming a sponsor? Fill in the form and we'll get back to you with availability and pricing.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="form-page" aria-label="Enquiry form">
+
+      <div class="form-card">
+        <h1>Service Enquiry Form</h1>
+        <p>All fields marked <span class="req" aria-hidden="true">*</span> are required. We'll respond within 2 business days with full details and pricing.</p>
+
+        <form id="enquiry-form" action="#" method="post" novalidate aria-label="Enquiry form">
+
+          <!-- NAME & EMAIL -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="eq-name">Full Name <span class="req" aria-label="required">*</span></label>
+              <input type="text" id="eq-name" name="name"
+                placeholder="e.g. Sipho Dlamini"
+                minlength="2" maxlength="80"
+                autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label for="eq-email">Email Address <span class="req" aria-label="required">*</span></label>
+              <input type="email" id="eq-email" name="email"
+                placeholder="e.g. sipho@example.com"
+                autocomplete="email" required>
+            </div>
+          </div>
+
+          <!-- PHONE & ORGANISATION -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="eq-phone">Phone Number <small>(optional)</small></label>
+              <input type="tel" id="eq-phone" name="phone"
+                placeholder="e.g. 0671234567"
+                autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="eq-org">Organisation / Community</label>
+              <input type="text" id="eq-org" name="organisation"
+                placeholder="e.g. Mhlaba Village Committee"
+                maxlength="100">
+            </div>
+          </div>
+
+          <!-- SERVICE TYPE -->
+          <div class="form-group">
+            <label for="eq-service">Service of Interest <span class="req" aria-label="required">*</span></label>
+            <select id="eq-service" name="service" required>
+              <option value="">-- Select a service --</option>
+              <option value="borehole">Borehole Installation (R85 000 per unit)</option>
+              <option value="tank">Community Water Tank (R12 000 per unit)</option>
+              <option value="workshop">Water Safety Workshop (R3 500 per session)</option>
+              <option value="sponsor">Corporate Sponsorship (from R50 000 p.a.)</option>
+              <option value="volunteer">Volunteer Programme (Free)</option>
+            </select>
+          </div>
+
+          <!-- QUANTITY (hidden for volunteer) -->
+          <div class="form-group" id="qty-group">
+            <label for="eq-qty">Quantity / Sessions Needed <span class="req" aria-label="required">*</span></label>
+            <input type="number" id="eq-qty" name="quantity"
+              min="1" max="999" value="1" required>
+          </div>
+
+          <!-- PREFERRED DATE -->
+          <div class="form-group">
+            <label for="eq-date">Preferred Start Date</label>
+            <input type="date" id="eq-date" name="date">
+          </div>
+
+          <!-- PROVINCE -->
+          <div class="form-group">
+            <label for="eq-province">Province</label>
+            <select id="eq-province" name="province">
+              <option value="">-- Select province --</option>
+              <option>Eastern Cape</option>
+              <option>Western Cape</option>
+              <option>Northern Cape</option>
+              <option>KwaZulu-Natal</option>
+              <option>Gauteng</option>
+              <option>Limpopo</option>
+              <option>Mpumalanga</option>
+              <option>Free State</option>
+              <option>North West</option>
+            </select>
+          </div>
+
+          <!-- MESSAGE -->
+          <div class="form-group">
+            <label for="eq-message">Additional Details <span class="req" aria-label="required">*</span></label>
+            <textarea id="eq-message" name="message" rows="5"
+              placeholder="Describe the community's situation, approximate population, and any specific requirements…"
+              minlength="10" maxlength="2000" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Submit Enquiry</button>
+
+        </form>
+
+        <!-- RESPONSE SUMMARY (shown after submit) -->
+        <div id="enquiry-summary" style="display:none;" aria-live="polite"></div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@puredrop.com">yomelelasiphelele@gmail.com</a></p>
+        <p>Phone: <a href="tel:+27679473236">+27 67 947 3236</a></p>
+        <address>1 Modiko Street, Gqeberha, Eastern Cape,<br>South Africa</address>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="ContactUs.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a><br>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><br>
+        <a href="https://x.com" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+    <p>© 2026 PureDrop Foundation | Safe Drinking Water For All</p>
+  </footer>
+
+ <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+<script src="js/enquiry.js"></script>
+<script src="js/donate.js"></script>>
+</body>
+</html>

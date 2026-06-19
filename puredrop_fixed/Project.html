@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Water Projects | PureDrop Foundation – South Africa</title>
+  <meta name="description" content="Explore PureDrop Foundation's water projects: borehole installations, clean water distribution, school programmes, and community tank projects across South Africa.">
+  <meta name="keywords" content="water projects South Africa, borehole installation, community water tank, water distribution, school water programme, PureDrop Foundation projects">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://puredrop.org/Project.html">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <a href="Home.html" class="logo">PureDrop</a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Impact.html">Impact</a></li>
+      <li><a href="Project.html" aria-current="page">Projects</a></li>
+      <li><a href="Donate.html">Donate</a></li>
+      <li><a href="enquiry.html">Enquire</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero-short" aria-label="Projects page hero">
+    <div class="hero-content">
+      <h1>Our Water Projects</h1>
+      <p>See how PureDrop Foundation is improving lives through clean water initiatives across South Africa.</p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- PROJECT SEARCH -->
+    <section aria-label="Search projects" style="padding:60px 8% 20px;">
+      <div class="search-wrap">
+        <label for="project-search" style="display:block;margin-bottom:10px;font-weight:600;color:#0369a1;">
+          Search Projects
+        </label>
+        <input
+          type="search"
+          id="project-search"
+          placeholder="Search by name or description…"
+          aria-label="Search projects"
+        >
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="projects" aria-label="Project gallery" style="padding-top:0;">
+      <div class="gallery">
+
+        <div class="card">
+          <img src="images/Village Borehole Installation.jpg"
+               alt="Borehole being installed in a rural South African village" loading="lazy">
+          <div class="card-content">
+            <h3>Village Borehole Installation</h3>
+            <p>Installed sustainable boreholes that provide clean water to rural families and schools in the Eastern Cape.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Clean Water Distribution.jpg"
+               alt="Volunteers distributing clean water to community members" loading="lazy">
+          <div class="card-content">
+            <h3>Clean Water Distribution</h3>
+            <p>Delivered purified drinking water to communities affected by drought and water shortages in the Northern Cape.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Water Safety Workshops.jpg"
+               alt="Community education workshop on water safety and hygiene" loading="lazy">
+          <div class="card-content">
+            <h3>Water Safety Workshops</h3>
+            <p>Educated families and learners about hygiene, water purification, and sanitation practices.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Community Water Tanks.jpg"
+               alt="Large water storage tanks installed in a remote community" loading="lazy">
+          <div class="card-content">
+            <h3>Community Water Tanks</h3>
+            <p>Installed water storage tanks to improve access to clean water in remote communities across Limpopo.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/School Water Program.jpg"
+               alt="Schoolchildren drinking clean water from a new water station" loading="lazy">
+          <div class="card-content">
+            <h3>School Water Programme</h3>
+            <p>Supplied schools with safe drinking water systems for healthier learning environments in KwaZulu-Natal.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Volunteer Outreach.jpg"
+               alt="Volunteers distributing water filters to community members" loading="lazy">
+          <div class="card-content">
+            <h3>Volunteer Outreach</h3>
+            <p>Volunteers helped distribute water filters and support local clean water campaigns in rural areas.</p>
+          </div>
+        </div>
+
+      </div><!-- /.gallery -->
+    </section>
+
+    <!-- LEAFLET MAP -->
+    <section aria-label="Project locations map" style="padding:40px 8% 80px;">
+      <div class="section-title">
+        <h2>Project Locations</h2>
+        <p>Click a marker to learn more about each project site.</p>
+      </div>
+      <div id="map" role="region" aria-label="Interactive map of project locations"></div>
+    </section>
+
+    <!-- IMPACT HIGHLIGHT -->
+    <section aria-label="Impact summary">
+      <div class="impact-box" style="background:#0369a1;color:white;border-radius:16px;padding:60px;text-align:center;max-width:800px;margin:0 auto 60px;">
+        <h2 style="color:white;font-size:36px;margin-bottom:16px;">Making Every Drop Count</h2>
+        <p style="font-size:18px;opacity:0.9;">
+          Over 10,000 people have benefited from our clean water initiatives.
+          Want to bring a project to your community?
+        </p>
+        <br>
+        <a href="enquiry.html" class="btn" style="background:white;color:#0369a1;">Make an Enquiry</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@puredrop.com">yomelelasiphelele@gmail.com</a></p>
+        <p>Phone: <a href="tel:+27679473236">+27 67 947 3236</a></p>
+        <address>1 Modiko Street, Gqeberha, Eastern Cape,<br>South Africa</address>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="ContactUs.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a><br>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><br>
+        <a href="https://x.com" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+    <p>© 2026 PureDrop Foundation | Safe Drinking Water For All</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLEo=" crossorigin=""></script>
+
+  <script src="./js/main.js"></script>
+
+  <script>
+    // Initialise map after Leaflet loads
+    window.addEventListener("load", function () {
+      if (typeof window.initMap === "function") window.initMap();
+    });
+  </script>
+</body>
+</html>
